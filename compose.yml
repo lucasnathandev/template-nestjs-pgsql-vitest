@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    mem_limit: 1024m
+    mem_reservation: 256mb
+    cpus: 1
+    environment:
+      - POSTGRESQL_USERNAME=test
+      - POSTGRESQL_PASSWORD=test
+      - POSTGRESQL_DATABASE=myDb
+    volumes:
+      - ./.docker/db/data:/var/lib/postgresql/:delegated
