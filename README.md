@@ -20,10 +20,10 @@ $ bun install
 $ bun start
 
 # watch mode
-$ bun start:dev
+$ bun dev
 
 # production mode
-$ bun start:prod
+$ bun prod
 ```
 
 ## Rodar testes
@@ -31,6 +31,9 @@ $ bun start:prod
 ```bash
 # testes de unidade
 $ bun test
+
+# testes de unidade em modo watch
+$ bun test:watch
 
 # testes end-to-end (e2e)
 $ bun test:e2e
